@@ -15,11 +15,24 @@ addContactBtn.addEventListener('click', function (e) {
       "requestTime": 1327059355361,
       "contact": {
         "email": "marcin.test@gmail.com",
+        "fax": "+48345543345",
+        "name": "Konrad Test",
+        "phone": "+48123321123",
+        "company": "Benhauer",
+        "state": "PROSPECT",
+        "address": {
+          "streetAddress": "Brzyczyńska 123",
+          "zipCode": "43-305",
+          "city": "Bielsko-Biała",
+          "country": "PL"
         }
       },
       "owner": "produkcja@salesmanago.pl",
       "forceOptOut": false,
       "forcePhoneOptOut": false,
+      "tags": ["API",
+        "ADmanago"
+      ],
       "properties": {
         "custom.nickname": "Konri",
         "custom.sex": "M"
