@@ -12,6 +12,10 @@ addContactBtn.addEventListener('click', function () {
     dataType: "json",
     data: {
       "async": true,
+      "apiKey": "asdfjkh2323asdf",
+      "clientId": "36ah1dxt6fpehf53",
+      "sha": "2ebf4bec5faab710c5d6368943013cda1ae9ea9b",
+      "requestTime": 1327059355361,
       "contact": {
         "email": "konrad-test-1@konri.com",
         "fax": "+48345543345",
