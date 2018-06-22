@@ -8,6 +8,8 @@ addContactBtn.addEventListener('click', function (e) {
       'Accept': 'application/json, application/json',
       'Content-Type': 'application/json;charset=UTF-8'
     },
+    contentType: "application/json;charset=UTF-8",
+    dataType: "json",
     data: {
       "apiKey": "asdfjkh2323asdf",
       "clientId": "36ah1dxt6fpehf53",
