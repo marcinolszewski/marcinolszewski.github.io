@@ -3,7 +3,7 @@ const addContactBtn = document.getElementById('addNewContact');
 addContactBtn.addEventListener('click', function (e) {
   $.ajax({
     type: "POST",
-    url: "https://cors-anywhere.herokuapp.com/http://app2.salesmanago.pl/api/contact/insert",
+    url: "http://app2.salesmanago.pl/api/contact/insert",
     headers: {
       'Accept': 'application/json, application/json',
       'Content-Type': 'application/json;charset=UTF-8'
