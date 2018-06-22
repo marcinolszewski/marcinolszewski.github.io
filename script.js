@@ -14,13 +14,19 @@ addContactBtn.addEventListener('click', function (e) {
       "sha": "2ebf4bec5faab710c5d6368943013cda1ae9ea9b",
       "requestTime": 1327059355361,
       "contact": {
-        "email": "marcin.test@gmail.com"
+        "email": "marcin.test@gmail.com",
         }
       },
       "owner": "produkcja@salesmanago.pl",
       "forceOptOut": false,
-      "forcePhoneOptOut": false
-      ]
+      "forcePhoneOptOut": false,
+      "properties": {
+        "custom.nickname": "Konri",
+        "custom.sex": "M"
+      },
+      "birthday": "19801017",
+      "useApiDoubleOptIn": true,
+      "lang": "PL"
     }
   })
 });
