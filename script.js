@@ -1,12 +1,12 @@
 const addContactBtn = document.getElementById('addNewContact');
 
-addContactBtn.addEventListener('click', function () {
+addContactBtn.addEventListener('click', function () {}
   $.ajax({
     type: "POST",
     url: "http://app2.salesmanago.pl/api/contact/upsert",
     headers: {
-      'Accept': 'application/json, application/json',
-      'Content-Type': 'application/json;charset=UTF-8'
+      "Accept": "application/json, application/json",
+      "Content-Type": "application/json;charset=UTF-8"
     },
     contentType: "application/json;charset=UTF-8",
     dataType: "json",
