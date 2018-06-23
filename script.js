@@ -1,6 +1,6 @@
 const addContactBtn = document.getElementById('addNewContact');
 
-addContactBtn.addEventListener('click', function () {}
+addContactBtn.addEventListener('click', function () {
   $.ajax({
     type: "POST",
     url: "http://app2.salesmanago.pl/api/contact/upsert",
