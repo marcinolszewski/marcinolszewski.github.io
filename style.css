@@ -34,6 +34,14 @@ body {
   font-weight: 300;
 }
 
+.smaller {
+  font-size: 13px;
+}
+
+.bigger {
+  font-size: 20px;
+}
+
 .wellcome {
   margin-bottom: 40px;
 }
