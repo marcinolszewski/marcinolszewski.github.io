@@ -1,15 +1,119 @@
-* {
+/* omg, pure css */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
+:root {
+  --pleasant-background: #fafafa;
+  --pleasant-text: #343434;
+  --pleasant-link: #aaa;
+  --pleasant-link-hov: #ccc;
+}
+
+[data-theme='dark'] {
+  --pleasant-background: #343434;
+  --pleasant-text: #fafafa;
+}
+
+*,
+:after,
+:before {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--pleasant-background);
+  color: var(--pleasant-text);
   text-align: center;
+  display: flex;
+  font-family: Lato, sans-serif;
+}
+
+.weak {
+  font-weight: 300;
+}
+
+.wellcome {
+  margin-bottom: 40px;
+}
+
+.wellcome:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.list {
+  list-style-type: none;
+  text-align: left;
 }
 
 a {
-  color: #fff;
+  text-decoration: none;
+  color: var(--pleasant-link);
+  font-weight: 300;
+  transition: 0.2s ease-in-out;
+}
+
+a:active,
+a:visited,
+a:link {
+  color: var(--pleasant-link);
+}
+
+strong {
+  transition: 0.2s ease-in-out;
+}
+
+a:hover,
+a:hover > strong {
+  color: var(--pleasant-link-hov);
+}
+
+.copy {
+  margin-top: 100px;
+  font-size: 12px;
+  color: var(--pleasant-link);
+  font-weight: 300;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--pleasant-background);
+  opacity: 1;
+}
+
+.dark-mode-trigger:hover {
+  cursor: pointer;
+}
+
+.dark-mode {
+  display: none;
+}
+
+.show-content {
+  animation: disapear 1s steps(100) forwards;
+}
+
+@keyframes disapear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
